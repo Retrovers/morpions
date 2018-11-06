@@ -3,7 +3,6 @@ $( document ).ready(function() {
     // CONSTANTE
     const AllTabs = ".tab1, .tab2, .tab3, .tab4, .tab5, .tab6, .tab7, .tab8, .tab9"
     const MessageDiv = ".messages"
-    const Players = ["Joueur 1", "Joueur 2"]
     const PlayersSymboles = ['X', 'O']
     const RestartButton = "#restart"
     const TabsDiv = ".tabs"
@@ -13,10 +12,9 @@ $( document ).ready(function() {
     const soundEnableImage = "assets/images/soundEnable.svg"
     const soundDisableImage = "assets/images/soundDisable.svg"
     var AllTabsSelected = []
-    var isSoundEnable = true;
-    var nextPlayer;
-
-    startGame()
+    var isSoundEnable = true
+    var nextPlayer
+    var Players
     
     function getRandomInt(max){
         return Math.floor(Math.random() * Math.floor(max))
@@ -188,5 +186,24 @@ $( document ).ready(function() {
         WriteMessage("Le tirage au sort a été fait !<br><b>"+ Players[nextPlayer%2] +"</b> a toi de jouer !")
         animFadeTabs()
     }
+
+    function getQueryParams(qs) {
+        qs = qs.split("+").join(" ");
+        var params = {}, tokens, re = /[?&]?([^=]+)=([^&]*)/g;
+        while (tokens = re.exec(qs)) {
+            params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+        }
+        return params;
+    }
+
+    var $_GET = getQueryParams(document.location.search);
+    console.log($_GET)
+
+    if ($_GET['player1Local'] != undefined && $_GET['player2Local'] != undefined){
+        Players = [$_GET['player1Local'], $_GET['player2Local']]
+        startGame()
+    }
+
+
 
 });

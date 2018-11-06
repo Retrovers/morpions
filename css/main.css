@@ -1,3 +1,6 @@
+body {
+    background-color: #f5f6fa;
+}
 .creditials{
     position: absolute;
     bottom: 3%;
@@ -12,23 +15,47 @@
 .playBox{
     position: absolute;
     text-align: center;
-    top: 17%;
+    top: 19%;
     left: 0%;
     right: 0%;
 }
-.loginBox {
+.localPlay {
     position: absolute;
     left: 30%;
     right: 30%;
     border-style: solid;
     border-width: 2px;
 }
-.loginBox > form{
-    margin-top:5px;
-    margin-bottom:6px;
-    margin-left: 7px;
-    margin-right: 7px;
+.localPlay > hr {
+    width: 85%;
 }
 #username{
     width: 100%;
+}
+.localPlayForm {
+    display: inline-grid;
+}
+.localPlayForm > label{
+    padding-bottom: 3%;
+}
+.localPlayForm > input{
+    margin-bottom: 3%;
+}
+.localPlayTitle {
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+#playLocal {
+    padding: 3%;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border: 2px solid #555555;
+    cursor: grab;
+    margin-bottom: 3%;
+    width: 75%;
+    margin-left: 13%;
+}
+#playLocal:hover {
+    background-color: #555555;
+    color: white;
 }

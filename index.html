@@ -8,20 +8,26 @@
     <title>Morpion</title>
 </head>
 <body>
-    <h2 class="welcomeMessage">Welcome to the Morpion game !</h2>
+    <h1 class="welcomeMessage">Welcome to the Morpion game !</h1>
     <div class="playBox">
-        <div class="loginBox">
-            <form>
-                <label for="#username">Choose your username :</label><br> 
-                <input type="text" id="username"> <br>
-                <label for="">Choose action : </label> <br>
-                <button id="play">Play</button>
-                <button id="play_with_friends">Play with friends</button>
+        <div class="localPlay">
+            <h3 class="localPlayTitle">Play in local with your friends</h3>
+            <hr>
+            <form action="localgame.html" method="GET" class="localPlayForm" action="localPlayForm">
+                <label>Name of player 1 :</label>
+                <input type="text" id="player1Local" name="player1Local">
+                <label>Name of player 2 :</label>
+                <input type="text" id="player2Local" name="player2Local">
+                <button id="playLocal" type="submit">Play !</button>
             </form>
         </div>
     </div>
 </body>
 <footer>
     <i class="creditials">Dev by <a href="https://twitter.com/@Retrovers_">@Retrovers_</a> with <3</l>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
 </footer>
 </html>
