@@ -1,0 +1,83 @@
+body {
+ text-align: center;
+ background-color: #f5f6fa;
+}
+.game{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.messages{
+    font-size: 30px;
+    font-style: normal;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+.tabs{
+    font-size: 100px;
+    opacity: 0;
+}
+.tabsTop{
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+}
+.tabsCenter{
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+}
+.tabsBottom{
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+}
+.tab1, .tab4, .tab7{
+    border-style: solid;
+    border-width: 0px 3px 0px 0px;
+}
+.tab2, .tab5, .tab8{
+    border-style: solid;
+    border-width: 0px 3px 0px 0px;
+}
+.tab1, .tab2, .tab3, .tab4, .tab5, .tab6, .tab7, .tab8, .tab9{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 135px;
+    height: 135px;
+    cursor: grab;
+}
+.tab1:hover, .tab2:hover, .tab3:hover, .tab4:hover, .tab5:hover, .tab6:hover, .tab7:hover, .tab8:hover, .tab9:hover{
+    background-color: #dcdde1;
+}
+.selected {
+    background-color: #dcdde1; 
+}
+.creditials{
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+}
+#restart {
+    display: none;
+}
+.restart {
+    padding: 12px 13px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border: 2px solid #555555;
+    cursor: grab;
+}
+.restart:hover {
+    background-color: #555555;
+    color: white;
+}
+.options {
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+}
+.soundOption {
+    width: 30%;
+    cursor: grab;
+}
