@@ -6,6 +6,8 @@ $( document ).ready(function() {
 		if (player1LocalName == "" && player1LocalName == ""){
 			alert('Please, fill all input')
 			e.preventDefault()
-		}
+		} else {
+			$("body").toggle("slide")
+		}	
 	})
 })

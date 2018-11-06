@@ -38,6 +38,10 @@ $( document ).ready(function() {
         restartGame()
     })
 
+    $(".back").click(function(e) {
+        document.location.href = "index.html"  
+    })
+
     function changeSoundStatus() {
         if (isSoundEnable){
             $(".soundOption").attr('src', soundDisableImage)
