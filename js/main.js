@@ -10,4 +10,16 @@ $( document ).ready(function() {
 			$("body").toggle("slide")
 		}	
 	})
+
+	$('#isHost').change(function(e){
+		if ($(this).is(':checked')){
+			$("#JoinCodeDiv").css('display', 'none')
+			$('#PlayOnlineButton').html("Host and play !")
+		} else {
+			$("#JoinCodeDiv").css('display', 'block')
+			$('#PlayOnlineButton').html("Join and play !")
+		}
+	})
+
+
 })

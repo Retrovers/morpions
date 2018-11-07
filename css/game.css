@@ -81,3 +81,10 @@ body {
     width: 30%;
     cursor: grab;
 }
+.back {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    width: 2.5%;
+    cursor: grab;
+}

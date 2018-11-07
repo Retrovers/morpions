@@ -179,7 +179,7 @@ $( document ).ready(function() {
     }
 
     function checkBoxAlreadySelected(e){
-        return e.toElement.className.includes("selected")
+        return e.target.className.includes("selected")
     }
 
     function startGame(){

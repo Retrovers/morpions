@@ -11,14 +11,30 @@
     <h1 class="welcomeMessage">Welcome to the Morpion game !</h1>
     <div class="playBox">
         <div class="localPlay">
-            <h3 class="localPlayTitle">Play in local with your friends</h3>
+            <h3 class="PlayTitle">Play on this computer with your friend</h3>
             <hr>
-            <form action="localgame.html" method="GET" class="localPlayForm" action="localPlayForm">
+            <form action="localgame.html" method="GET" class="PlayForm" action="PlayForm">
                 <label>Name of player 1 :</label>
                 <input type="text" id="player1Local" name="player1Local">
                 <label>Name of player 2 :</label>
                 <input type="text" id="player2Local" name="player2Local">
-                <button id="playLocal" type="submit">Play !</button>
+                <button class="PlayButton" id="playLocal" type="submit">Play !</button>
+            </form>
+        </div>
+    </div>
+    <div class="playBox2">
+        <div class="onlinePlay">
+            <h3 class="PlayTitle">Play with your friend everywhere in the world</h3>
+            <hr>
+            <form action="localgame.html" method="GET" class="PlayForm" action="PlayForm">
+                <label>Your name :</label>
+                <input type="text" id="playerOnline" name="player1Local">
+                <label>Are you the hoster ? <input type="checkbox" name="checkbox" value="1" id="isHost" checked></label>
+                <div id="JoinCodeDiv">
+                    <label>Enter join code :</label>
+                    <input type="text" name="joinCode">
+                </div>
+                <button class="PlayButton" id="PlayOnlineButton" type="submit" value="">Host and play !</button>
             </form>
         </div>
     </div>

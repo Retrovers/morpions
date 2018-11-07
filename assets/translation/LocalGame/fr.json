@@ -1,0 +1,8 @@
+{
+	"devBy" : "Developpé par",
+	"with_heart" : "avec le <3",
+	"win" : "A gagné(e) !<br>Que voulez vous faire ?",
+	"select_other" : "selectionnez une case non utlisé",
+	"game_loose" : "Partie perdue ! On refait,<br>A <b>{Player}</b> de jouer !",
+	"new_run" : "Maintenant a <b>{Player}</b><br>De jouer !"
+}

@@ -19,6 +19,13 @@ body {
     left: 0%;
     right: 0%;
 }
+.playBox2{
+    position: absolute;
+    text-align: center;
+    top: 43%;
+    left: 0%;
+    right: 0%;
+}
 .localPlay {
     position: absolute;
     left: 30%;
@@ -26,26 +33,31 @@ body {
     border-style: solid;
     border-width: 2px;
 }
-.localPlay > hr {
+.onlinePlay {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    border-style: solid;
+    border-width: 2px;
+}
+hr {
     width: 85%;
 }
-#username{
-    width: 100%;
-}
-.localPlayForm {
+
+.PlayForm {
     display: inline-grid;
 }
-.localPlayForm > label{
+label{
     padding-bottom: 3%;
 }
-.localPlayForm > input{
+input{
     margin-bottom: 3%;
 }
-.localPlayTitle {
+.PlayTitle {
     margin-bottom: 3%;
     margin-top: 3%;
 }
-#playLocal {
+.PlayButton {
     padding: 3%;
     font-size: 16px;
     transition-duration: 0.4s;
@@ -55,7 +67,10 @@ body {
     width: 75%;
     margin-left: 13%;
 }
-#playLocal:hover {
+.PlayButton:hover {
     background-color: #555555;
     color: white;
+}
+#JoinCodeDiv {
+    display: none;
 }
